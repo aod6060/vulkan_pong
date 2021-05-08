@@ -1,0 +1,25 @@
+Opened debug.txt
+Validation Layer
+VUID-vkCmdDrawIndexed-None-02699
+Validation Error: [ VUID-vkCmdDrawIndexed-None-02699 ] Object 0: handle = 0x3172e8000000002d, type = VK_OBJECT_TYPE_UNKNOWN; | MessageID = 0xa44449d4 | VkNonDispatchableHandle 0x3172e8000000002d[] encountered the following validation error at vkCmdDrawIndexed() time: Descriptor in binding #1 index 1 is being used in draw but has never been updated via vkUpdateDescriptorSets() or a similar call. The Vulkan spec states: Descriptors in each bound descriptor set, specified via vkCmdBindDescriptorSets, must be valid if they are statically used by the VkPipeline bound to the pipeline bind point used by this command (https://vulkan.lunarg.com/doc/view/1.2.170.0/windows/1.2-extensions/vkspec.html#VUID-vkCmdDrawIndexed-None-02699)
+
+Validation Layer
+VUID-vkCmdDrawIndexed-None-02699
+Validation Error: [ VUID-vkCmdDrawIndexed-None-02699 ] Object 0: handle = 0x55904b000000002e, type = VK_OBJECT_TYPE_UNKNOWN; | MessageID = 0xa44449d4 | VkNonDispatchableHandle 0x55904b000000002e[] encountered the following validation error at vkCmdDrawIndexed() time: Descriptor in binding #1 index 1 is being used in draw but has never been updated via vkUpdateDescriptorSets() or a similar call. The Vulkan spec states: Descriptors in each bound descriptor set, specified via vkCmdBindDescriptorSets, must be valid if they are statically used by the VkPipeline bound to the pipeline bind point used by this command (https://vulkan.lunarg.com/doc/view/1.2.170.0/windows/1.2-extensions/vkspec.html#VUID-vkCmdDrawIndexed-None-02699)
+
+Validation Layer
+VUID-vkCmdDrawIndexed-None-02699
+Validation Error: [ VUID-vkCmdDrawIndexed-None-02699 ] Object 0: handle = 0xf4312a000000002f, type = VK_OBJECT_TYPE_UNKNOWN; | MessageID = 0xa44449d4 | VkNonDispatchableHandle 0xf4312a000000002f[] encountered the following validation error at vkCmdDrawIndexed() time: Descriptor in binding #1 index 1 is being used in draw but has never been updated via vkUpdateDescriptorSets() or a similar call. The Vulkan spec states: Descriptors in each bound descriptor set, specified via vkCmdBindDescriptorSets, must be valid if they are statically used by the VkPipeline bound to the pipeline bind point used by this command (https://vulkan.lunarg.com/doc/view/1.2.170.0/windows/1.2-extensions/vkspec.html#VUID-vkCmdDrawIndexed-None-02699)
+
+Validation Layer
+VUID-vkCmdDrawIndexed-None-02699
+Validation Error: [ VUID-vkCmdDrawIndexed-None-02699 ] Object 0: handle = 0x3172e8000000002d, type = VK_OBJECT_TYPE_UNKNOWN; | MessageID = 0xa44449d4 | VkNonDispatchableHandle 0x3172e8000000002d[] encountered the following validation error at vkCmdDrawIndexed() time: Descriptor in binding #1 index 1 is being used in draw but has never been updated via vkUpdateDescriptorSets() or a similar call. The Vulkan spec states: Descriptors in each bound descriptor set, specified via vkCmdBindDescriptorSets, must be valid if they are statically used by the VkPipeline bound to the pipeline bind point used by this command (https://vulkan.lunarg.com/doc/view/1.2.170.0/windows/1.2-extensions/vkspec.html#VUID-vkCmdDrawIndexed-None-02699)
+
+Validation Layer
+VUID-vkCmdDrawIndexed-None-02699
+Validation Error: [ VUID-vkCmdDrawIndexed-None-02699 ] Object 0: handle = 0x55904b000000002e, type = VK_OBJECT_TYPE_UNKNOWN; | MessageID = 0xa44449d4 | VkNonDispatchableHandle 0x55904b000000002e[] encountered the following validation error at vkCmdDrawIndexed() time: Descriptor in binding #1 index 1 is being used in draw but has never been updated via vkUpdateDescriptorSets() or a similar call. The Vulkan spec states: Descriptors in each bound descriptor set, specified via vkCmdBindDescriptorSets, must be valid if they are statically used by the VkPipeline bound to the pipeline bind point used by this command (https://vulkan.lunarg.com/doc/view/1.2.170.0/windows/1.2-extensions/vkspec.html#VUID-vkCmdDrawIndexed-None-02699)
+
+Validation Layer
+VUID-vkCmdDrawIndexed-None-02699
+Validation Error: [ VUID-vkCmdDrawIndexed-None-02699 ] Object 0: handle = 0xf4312a000000002f, type = VK_OBJECT_TYPE_UNKNOWN; | MessageID = 0xa44449d4 | VkNonDispatchableHandle 0xf4312a000000002f[] encountered the following validation error at vkCmdDrawIndexed() time: Descriptor in binding #1 index 1 is being used in draw but has never been updated via vkUpdateDescriptorSets() or a similar call. The Vulkan spec states: Descriptors in each bound descriptor set, specified via vkCmdBindDescriptorSets, must be valid if they are statically used by the VkPipeline bound to the pipeline bind point used by this command (https://vulkan.lunarg.com/doc/view/1.2.170.0/windows/1.2-extensions/vkspec.html#VUID-vkCmdDrawIndexed-None-02699)
+
