@@ -123,6 +123,12 @@ namespace pong {
 		input::createInputMapping("move-up", input::createInputMapKey(input::Keys::KEY_UP));
 		input::createInputMapping("move-down", input::createInputMapKey(input::Keys::KEY_DOWN));
 
+		audio::init();
+		audio::createSoundFX("ball-hit", "data/ball_hit.wav");
+		//audio::createSoundFX("player-score", "data/player_score.wav");
+		//audio::createSoundFX("ai-player-score", "data/ai_player_score.wav");
+		audio::createSoundFX("spawn-ball", "data/spawn_ball.wav");
+
 		vk::initVulkan(vulkan);
 
 		// Buffers
@@ -348,6 +354,8 @@ namespace pong {
 		}
 
 		vk::releaseVulkan(vulkan);
+
+		audio::release();
 
 		input::clearInputMaps();
 	}
@@ -1452,6 +1460,7 @@ namespace pong {
 	}
 
 	void resetBall(Ball& b) {
+		audio::playSoundFX("spawn-ball");
 		b.speed = glm::vec2(32.0f);
 
 		b.position = glm::vec2(
@@ -1469,18 +1478,22 @@ namespace pong {
 	void updateBall(Ball& b, float delta) {
 
 		if (b.position.y < 0.0f) {
+			audio::playSoundFX("ball-hit");
 			b.velocity.y = 1.0f;
 		}
 		else if (b.position.y + b.size.y > vulkan.swapchainExtent.height) {
+			audio::playSoundFX("ball-hit");
 			b.velocity.y = -1.0f;
 		}
 
 		b.position += b.velocity * b.speed * delta;
 
 		if (b.position.x + b.size.x < 0.0f) {
+			//audio::playSoundFX("ai-player-score");
 			resetBall(b);
 		}
 		else if (b.position.x > vulkan.swapchainExtent.width) {
+			//audio::playSoundFX("player-score");
 			resetBall(b);
 		}
 
@@ -1491,11 +1504,13 @@ namespace pong {
 		toRect(p2r, aiPlayer);
 
 		if (br.isCollide(p1r)) {
+			audio::playSoundFX("ball-hit");
 			b.velocity.x = 1.0f;
 			b.speed.x += b.speed.x * 0.1f;
 		}
 
 		if (br.isCollide(p2r)) {
+			audio::playSoundFX("ball-hit");
 			b.velocity.x = -1.0f;
 			b.speed.x += b.speed.x * 0.1f;
 		}
