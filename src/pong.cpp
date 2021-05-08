@@ -129,6 +129,8 @@ namespace pong {
 		//audio::createSoundFX("ai-player-score", "data/ai_player_score.wav");
 		audio::createSoundFX("spawn-ball", "data/spawn_ball.wav");
 
+		audio::setMasterVolume(0.25f);
+
 		vk::initVulkan(vulkan);
 
 		// Buffers

@@ -25,4 +25,8 @@ namespace audio {
 		Mix_PlayChannel(-1, soundFX[name], 0);
 	}
 
+	void setMasterVolume(float volume) {
+		Mix_Volume(-1, (int)(volume * 128));
+	}
+
 }

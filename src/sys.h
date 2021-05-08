@@ -480,4 +480,6 @@ namespace audio {
 
 	void playSoundFX(std::string name);
 
+	// Value between 0.0f = silent to 1.0f = max
+	void setMasterVolume(float volume);
 }
