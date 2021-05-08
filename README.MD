@@ -28,6 +28,13 @@ The last thing is that the game doesn't keep track of any score so there is no e
 I got Vulkan working. I also love creating demos that actually has functionality because it makes it more interesting... Well enjoy this 
 infinite pong game and have a nice day...
 
+Dependencies
+SDL2
+SDL2_image
+SDL2_ttf
+SDL2_mixer
+vulkan-1
+
 The MIT License (MIT)
 Copyright © 2021 <Frederic R. Cook>
 
